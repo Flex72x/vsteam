@@ -1,0 +1,7 @@
+<div class="sidebar">
+	<a href="{{route('admin.index')}}" class="d-flex flex-column align-items-center justify-content-center a-menu {{request()->routeIs('admin.index') ? 'a-menu-active' : '' }}"><i class="bi bi-house-door fs-2"></i><span class="fs-5">Главная</span></a>
+	<a href="{{route('admin.news.index')}}" class="d-flex flex-column align-items-center justify-content-center a-menu {{request()->routeIs('admin.news.index') ? 'a-menu-active' : '' }}"><i class="bi bi-newspaper fs-2"></i><span class="fs-5">Новости</span></a>
+	<a href="{{route('admin.group.index')}}" class="d-flex flex-column align-items-center justify-content-center a-menu {{request()->routeIs('admin.group.index') ? 'a-menu-active' : '' }}"><i class="bi bi-people fs-2"></i><span class="fs-5">Группы</span></a>
+	<a href="{{route('admin.discipline.index')}}" class="d-flex flex-column align-items-center justify-content-center a-menu {{request()->routeIs('admin.discipline.index') ? 'a-menu-active' : '' }}"><i class="bi bi-book fs-2"></i><span class="fs-5">Дисциплины</span></a>
+	<a href="{{route('admin.task.index')}}" class="d-flex flex-column align-items-center justify-content-center a-menu {{request()->routeIs('admin.task.index') ? 'a-menu-active' : '' }}"><i class="bi bi-list-nested fs-2"></i><span class="fs-5">Разделы</span></a>
+</div>

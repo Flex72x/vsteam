@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+}
+
+.login-main {
+	min-height: 100vh;
+	background: #e0e0e0;
+}
+
+#formLogin {
+	background: #424242;
+}
+
+.main {
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	"s s h h h h h h h h h h"
+	"s s c c c c c c c c c c"
+	"f f f f f f f f f f f f";
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 80px auto 100px;
+}
+
+header {
+	grid-area: h;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.content {
+	grid-area: c;
+	background: #f0f3fa;
+}
+
+.sidebar {
+	grid-area: s;
+	background: #4e5b67;
+}
+
+footer {
+	grid-area: f;
+}
+
+a {
+	text-decoration: none;
+}
+.a-menu-active {
+	background: #45505b;
+	position: relative;
+}
+
+.a-menu-active::after {
+	content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0px; bottom: 15px; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border: 20px solid transparent; border-right: 20px solid #eaf1fb;
+}
+
+.a-menu:hover {
+	background: #47525c;
+}
+
+.a-menu i{
+	color: #8f9ead;
+}
+
+.a-menu span{
+	color: white;
+}
+
+.a-menu-active i {
+	color: #5fa5bb;
+}
+
+.ck-editor__editable_inline {
+    min-height: 300px;
+}
+
+@media screen and (max-width: 762px) {
+	.main {
+		grid-template-areas: 
+		"h h h h h h h h h h h h"
+		"s s s s s s s s s s s s"
+		"c c c c c c c c c c c c"
+		"f f f f f f f f f f f f";
+		grid-template-rows: auto auto auto auto;
+	}
+}
